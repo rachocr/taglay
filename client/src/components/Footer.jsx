@@ -12,13 +12,12 @@ function Footer() {
                 <div className="footer-section">
                     <h4>About</h4>
                     <p>
-                        Curating concise React know-how and tasteful UI ideas for builders who want
-                        to ship fast without looking generic.
+                        Documenting the ride, one mile at a time. A dedicated digital garage for your routes, maintenance logs, and the stories found on the road.
                     </p>
                 </div>
                 <div className="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: cyrusrobles@company.com</p>
+                    <p>Email: rachocr@riderslogbook.com</p>
                     <p>Phone: 09**-***-****</p>
                 </div>
                 <div className="footer-section">
@@ -37,7 +36,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                    <p>&copy; {currentYear} Your Company Name. All rights reserved.</p>
+                    <p>&copy; {currentYear} Riders Inc. All rights reserved.</p>
             </div>
         </footer>
     );

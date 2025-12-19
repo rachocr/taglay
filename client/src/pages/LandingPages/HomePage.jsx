@@ -9,15 +9,14 @@ function HomePage() {
     <div className="page">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Frontend studio</p>
-          <h1>Polished UI patterns without the corporate beige.</h1>
-          <p className="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec euismod posuere a aliquam
-            mattis ac sed nibh tincidunt non ultrices.
+          <p className="eyebrow" style={{ color: '#f8fafc' }}>A Rider's Logbook</p>
+          <h1 style={{ color: '#f8fafc' }}>Every ride has a story. Document the journey.</h1>
+          <p className="lead" style={{ color: '#f8fafc' }}>
+            Forget social media noise. Create a dedicated log of your routes, bike maintenance, road conditions, and the lessons learned on two wheels.
           </p>
           <div className="hero-actions">
             <Link to="/articles" className="button-link primary">
-              Browse articles
+              View Ride Logs
             </Link>
             <Link to="/about" className="button-link secondary">
               About the team
@@ -26,15 +25,15 @@ function HomePage() {
           <div className="stats">
             <div className="stat">
               <strong>{articles.length}+</strong>
-              <span>React breakdowns</span>
+              <span>Ride Logs</span>
             </div>
             <div className="stat">
-              <strong>3</strong>
-              <span>UI micro-guides</span>
+              <strong>12</strong>
+              <span>Scenic Routes</span>
             </div>
             <div className="stat">
-              <strong>Zero</strong>
-              <span>fluff allowed</span>
+              <strong>100%</strong>
+              <span>Rider Focused</span>
             </div>
           </div>
         </div>
@@ -42,12 +41,11 @@ function HomePage() {
         <div className="hero-visual">
           <div className="hero-panel">
             <img
-              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+              src="../../public/images/motorcycle.png"
               alt="Design desk with colorful UI elements"
             />
             <p className="muted">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in velit varius
-              rutrum vitae arcu.
+              Welcome to Roadbound, where every ride is a story waiting to be told.
             </p>
           </div>
         </div>
@@ -56,34 +54,31 @@ function HomePage() {
       <section>
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Highlights</p>
-            <h2>What you get inside.</h2>
+            <p className="eyebrow" style={{ color: '#f8fafc' }}>Highlights</p>
+            <h2 style={{ color: '#f8fafc' }}>Track what matters.</h2>
           </div>
-          <span className="muted">Clean patterns, real-world snippets.</span>
+          <span className="muted" style={{ color: '#f8fafc' }}>Your safe arrival is the best gift you can give.</span>
         </div>
         <div className="feature-grid">
           <div className="feature-card">
-            <div className="feature-icon">UI</div>
-            <h3>Layout recipes</h3>
+            <div className="feature-icon">NAV</div>
+            <h3>Route & Conditions</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac sed augue sem sit bibendum
-              at dui varius.
+              Don't just track miles. Record the road quality, weather conditions, and the best twisties to revisit later.
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">FE</div>
-            <h3>React clarity</h3>
+            <div className="feature-icon">EXP</div>
+            <h3>The Rider's Story</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies suspendisse
-              pellentesque auctor habitant amet.
+              A dedicated space to write about the feeling of the ride, the stops you made, and the people you met.
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">UX</div>
-            <h3>Microcopy cues</h3>
+            <div className="feature-icon">MNT</div>
+            <h3>Lessons & Maintenance</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis nisl ultricies
-              dignissim vulputate est.
+              Log mechanical hiccups, near misses, or safety tips you learned to keep your skills (and bike) sharp.
             </p>
           </div>
         </div>
@@ -92,8 +87,8 @@ function HomePage() {
       <section className="articles-section">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Articles</p>
-            <h2>Latest reads.</h2>
+            <p className="eyebrow" style={{ color: '#f8fafc' }}>Logs</p>
+            <h2 style={{ color: '#f8fafc' }}>Recent Journeys.</h2>
           </div>
           <Link to="/articles" className="button-link secondary">
             View all

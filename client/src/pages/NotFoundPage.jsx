@@ -5,11 +5,10 @@ function NotFoundPage() {
   return (
     <div className="page">
       <div className="not-found card">
-        <p className="eyebrow">Error</p>
+        <p className="eyebrow" style={{ color: '#0f172a' }}>Error</p>
         <h1>Page not found.</h1>
-        <p className="lead">
-          The link you followed to get here must be broken. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit.
+        <p className="lead" style={{ color: '#0f172a' }}>
+          The link you followed to get here must be broken. Feel free to contact the administrator.
         </p>
         <div className="hero-actions">
           <Link to="/" className="button-link primary">

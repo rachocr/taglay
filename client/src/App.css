@@ -3,10 +3,12 @@
   flex-direction: column;
   gap: 10px;
   max-width: 760px;
+  color: #f8fafc;
 }
 
 .page-header h1 {
   font-size: clamp(2rem, 3vw, 3rem);
+  color: #f8fafc;
 }
 
 .hero {
@@ -57,7 +59,6 @@
 
 .hero-panel img {
   border-radius: 14px;
-  border: 1px solid var(--border);
 }
 
 .stats {
@@ -69,19 +70,19 @@
 .stat {
   padding: 12px 14px;
   border-radius: 12px;
-  background: #f8fafc;
   border: 1px solid var(--border);
   min-width: 150px;
+  background-color: #1e293b
 }
 
 .stat strong {
   display: block;
   font-size: 1.5rem;
-  color: var(--text);
+  color: #f8fafc;
 }
 
 .stat span {
-  color: var(--muted);
+  color: #f8fafc;
 }
 
 .feature-grid {
@@ -165,7 +166,7 @@
 .cta-banner {
   padding: 20px;
   border-radius: var(--radius);
-  background: linear-gradient(120deg, #0ea5e9, #0284c7);
+  border: 1px solid #ffffff; 
   color: #ffffff;
   display: grid;
   gap: 8px;

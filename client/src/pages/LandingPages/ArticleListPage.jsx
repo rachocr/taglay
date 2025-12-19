@@ -37,11 +37,10 @@ function ArticleListPage() {
   return (
     <div className="page">
       <div className="page-header">
-        <p className="eyebrow">Library</p>
-        <h1>Articles crafted for UI-minded developers.</h1>
+        <p className="eyebrow" style={{ color: '#f8fafc' }}>Ride Logs</p>
+        <h1>Knowledge gained on two wheels.</h1>
         <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper massa sit a, nunc volutpat
-          elit tortor.
+          Filter your history by City Rides, Long Rides, or Night Rides. Review your past routes, road conditions, and the lessons learned on the road.
         </p>
       </div>
 
@@ -54,13 +53,12 @@ function ArticleListPage() {
       )}
 
       <div className="cta-banner">
-        <h3>Looking for more?</h3>
+        <h3 style={{ color: '#f8fafc' }}>Looking for more?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel purus faucibus neque sed
-          elementum feugiat.
+          I bet you just finished a ride, why not document the route and story while it's fresh?
         </p>
         <Link to="/about" className="button-link secondary">
-          Meet the crew
+          Meet the team
         </Link>
       </div>
     </div>

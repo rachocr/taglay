@@ -10,18 +10,15 @@ const SignInPage = () => {
     const navigate = useNavigate();
 
     const handleLogin = async (e) => {
-        // navigate('/dashboard');
         e.preventDefault();
         try {
-            // Call the login API
             const { data } = await loginUser({ email, password });
             console.log('Login successful:', data);
 
             localStorage.setItem('token', data.token);
             localStorage.setItem('firstName', data.firstName);
-            localStorage.setItem('type', data.type); // user this for dynamic rendering
+            localStorage.setItem('type', data.type);
 
-            // Navigate to the dashboard with the user's email and type
             navigate('/dashboard/dash-articles', { state: { firstName: data.firstName, type: data.type } });
         } catch (err) {
             console.error('Login failed:', err.response?.data?.message || err.message);
@@ -32,22 +29,26 @@ const SignInPage = () => {
     return (
         <div className="auth-shell">
             <div className="auth-hero">
-                <div className="auth-hero-badge">Taglay</div>
-                <h1>Welcome back</h1>
-                <p className="muted">Sign in to manage users and articles.</p>
+                <div className="auth-hero-badge">Rider's Logbook</div>
+                <h1>Welcome to the garage.</h1>
+                <p className="muted">Sign in to track your routes, maintenance, and stories.</p>
             </div>
 
             <div className="auth-card">
                 <div className="auth-card-header">
                     <h2>Sign in</h2>
-                    <p className="muted">Use your email and password to continue.</p>
+                    <p className="muted">Enter your credentials to access your logs.</p>
                 </div>
+                
+                {error && <p style={{color: '#ef4444', fontSize: '0.9rem', marginBottom: '10px'}}>{error}</p>}
+
                 <form className="auth-form" onSubmit={handleLogin}>
                     <label className="auth-field">
                         <span>Email</span>
                         <input
                             type="email"
                             id="email"
+                            placeholder="rider@example.com"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -59,17 +60,18 @@ const SignInPage = () => {
                         <input
                             type="password"
                             id="password"
+                            placeholder="••••••••"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required
                         />
                     </label>
 
-                    <button type="submit" className="button-link primary auth-submit">
-                        Sign in
+                    <button type="submit" className="auth-submit">
+                        Start Engine
                     </button>
                 </form>
-                <p className="auth-footnote muted">By signing in, you agree to our terms.</p>
+                <p className="auth-footnote muted">Ride Safe. Document Everything.</p>
             </div>
         </div>
     );
